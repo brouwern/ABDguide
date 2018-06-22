@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>A Companion to The Analysis of Biological Data</title>
+  <meta name="description" content="This is reading guide and course materials for Whitlock and Schluter’s Analysis of Biological Data">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="A Companion to The Analysis of Biological Data" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is reading guide and course materials for Whitlock and Schluter’s Analysis of Biological Data" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="A Companion to The Analysis of Biological Data" />
+  
+  <meta name="twitter:description" content="This is reading guide and course materials for Whitlock and Schluter’s Analysis of Biological Data" />
+  
+
+<meta name="author" content="Nathan Brouwer">
+
+
+<meta name="date" content="2018-06-22">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="displaying-data.html">
+<link rel="next" href="chapter-4-estimating-with-uncertainty.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="1" data-path="statistics-and-samples.html"><a href="statistics-and-samples.html"><i class="fa fa-check"></i><b>1</b> Statistics and Samples</a><ul>
+<li class="chapter" data-level="1.1" data-path="statistics-and-samples.html"><a href="statistics-and-samples.html#what-is-statistics"><i class="fa fa-check"></i><b>1.1</b> 1.1 What is statistics?</a></li>
+<li class="chapter" data-level="1.2" data-path="statistics-and-samples.html"><a href="statistics-and-samples.html#sampling-populations"><i class="fa fa-check"></i><b>1.2</b> 1.2 Sampling populations</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="statistics-and-samples.html"><a href="statistics-and-samples.html#example-1.2-raining-cats"><i class="fa fa-check"></i><b>1.2.1</b> Example 1.2: Raining cats</a></li>
+<li class="chapter" data-level="1.2.2" data-path="statistics-and-samples.html"><a href="statistics-and-samples.html#population-and-samples-pg-4"><i class="fa fa-check"></i><b>1.2.2</b> Population and samples (pg 4)</a></li>
+<li class="chapter" data-level="1.2.3" data-path="statistics-and-samples.html"><a href="statistics-and-samples.html#properties-of-good-samples-pg-5"><i class="fa fa-check"></i><b>1.2.3</b> Properties of good samples (pg 5)</a></li>
+<li class="chapter" data-level="1.2.4" data-path="statistics-and-samples.html"><a href="statistics-and-samples.html#random-sampling"><i class="fa fa-check"></i><b>1.2.4</b> Random sampling</a></li>
+<li class="chapter" data-level="1.2.5" data-path="statistics-and-samples.html"><a href="statistics-and-samples.html#how-to-take-a-random-sample"><i class="fa fa-check"></i><b>1.2.5</b> How to take a random sample</a></li>
+<li class="chapter" data-level="1.2.6" data-path="statistics-and-samples.html"><a href="statistics-and-samples.html#figure-1.2-3"><i class="fa fa-check"></i><b>1.2.6</b> Figure 1.2-3</a></li>
+<li class="chapter" data-level="1.2.7" data-path="statistics-and-samples.html"><a href="statistics-and-samples.html#sample-of-convience-pg-9"><i class="fa fa-check"></i><b>1.2.7</b> Sample of convience (pg 9)</a></li>
+<li class="chapter" data-level="1.2.8" data-path="statistics-and-samples.html"><a href="statistics-and-samples.html#volunteer-bias-pg-10"><i class="fa fa-check"></i><b>1.2.8</b> Volunteer bias (pg 10)</a></li>
+<li class="chapter" data-level="1.2.9" data-path="statistics-and-samples.html"><a href="statistics-and-samples.html#data-in-the-real-world"><i class="fa fa-check"></i><b>1.2.9</b> Data in the real world</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="statistics-and-samples.html"><a href="statistics-and-samples.html#types-of-data-an-variables-pg-11"><i class="fa fa-check"></i><b>1.3</b> 1.3 Types of data an variables (pg 11)</a><ul>
+<li class="chapter" data-level="1.3.1" data-path="statistics-and-samples.html"><a href="statistics-and-samples.html#explantory-and-response-variables"><i class="fa fa-check"></i><b>1.3.1</b> Explantory and response variables</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="statistics-and-samples.html"><a href="statistics-and-samples.html#frequency-distributions-and-probablity-distributions-pg-13"><i class="fa fa-check"></i><b>1.4</b> 1.4 Frequency distributions and probablity distributions (pg 13)</a></li>
+<li class="chapter" data-level="1.5" data-path="statistics-and-samples.html"><a href="statistics-and-samples.html#types-of-studies"><i class="fa fa-check"></i><b>1.5</b> 1.5 Types of studies</a></li>
+<li class="chapter" data-level="1.6" data-path="statistics-and-samples.html"><a href="statistics-and-samples.html#summary"><i class="fa fa-check"></i><b>1.6</b> 1.6 Summary</a></li>
+<li class="chapter" data-level="1.7" data-path="statistics-and-samples.html"><a href="statistics-and-samples.html#practice-problems"><i class="fa fa-check"></i><b>1.7</b> Practice Problems</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="displaying-data.html"><a href="displaying-data.html"><i class="fa fa-check"></i><b>2</b> 2 Displaying Data</a><ul>
+<li class="chapter" data-level="2.1" data-path="displaying-data.html"><a href="displaying-data.html#guidelines-for-effective-graphs"><i class="fa fa-check"></i><b>2.1</b> 2.1 Guidelines for effective graphs</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="displaying-data.html"><a href="displaying-data.html#how-to-draw-a-bad-graph"><i class="fa fa-check"></i><b>2.1.1</b> How to draw a bad graph</a></li>
+<li class="chapter" data-level="2.1.2" data-path="displaying-data.html"><a href="displaying-data.html#how-to-draw-a-good-graph"><i class="fa fa-check"></i><b>2.1.2</b> How to draw a good graph</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="displaying-data.html"><a href="displaying-data.html#showing-data-for-one-variable"><i class="fa fa-check"></i><b>2.2</b> 2.2 Showing data for one variable</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="displaying-data.html"><a href="displaying-data.html#showing-numerical-data-frequency-table-histogram-pg-33"><i class="fa fa-check"></i><b>2.2.1</b> Showing numerical data: frequency table &amp; histogram (pg 33)</a></li>
+<li class="chapter" data-level="2.2.2" data-path="displaying-data.html"><a href="displaying-data.html#describing-the-shape-of-a-histogram-pg-36"><i class="fa fa-check"></i><b>2.2.2</b> Describing the shape of a histogram (pg 36)</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="displaying-data.html"><a href="displaying-data.html#showing-association-between-two-variables"><i class="fa fa-check"></i><b>2.3</b> 2.3 Showing association between two variables</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="displaying-data.html"><a href="displaying-data.html#showing-association-between-numerical-variables-scatter-plot-pg-42"><i class="fa fa-check"></i><b>2.3.1</b> Showing association between numerical variables: scatter plot (pg 42)</a></li>
+<li class="chapter" data-level="2.3.2" data-path="displaying-data.html"><a href="displaying-data.html#showing-association-between-a-numerical-and-a-categorical-variable"><i class="fa fa-check"></i><b>2.3.2</b> Showing association between a numerical and a categorical variable</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="displaying-data.html"><a href="displaying-data.html#showing-trends-in-time-and-space"><i class="fa fa-check"></i><b>2.4</b> 2.4 Showing trends in time and space</a></li>
+<li class="chapter" data-level="2.5" data-path="displaying-data.html"><a href="displaying-data.html#line-graph"><i class="fa fa-check"></i><b>2.5</b> Line graph</a></li>
+<li class="chapter" data-level="2.6" data-path="displaying-data.html"><a href="displaying-data.html#howw-to-make-good-tables"><i class="fa fa-check"></i><b>2.6</b> 2.5 Howw to make good tables</a></li>
+<li class="chapter" data-level="2.7" data-path="displaying-data.html"><a href="displaying-data.html#summary-1"><i class="fa fa-check"></i><b>2.7</b> 2.6 Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="describing-data.html"><a href="describing-data.html"><i class="fa fa-check"></i><b>3</b> Describing Data</a><ul>
+<li class="chapter" data-level="3.1" data-path="describing-data.html"><a href="describing-data.html#arithemetic-mean-and-standard-deviation"><i class="fa fa-check"></i><b>3.1</b> 3.1 Arithemetic mean and standard deviation</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="describing-data.html"><a href="describing-data.html#the-sample-mean"><i class="fa fa-check"></i><b>3.1.1</b> The sample mean</a></li>
+<li class="chapter" data-level="3.1.2" data-path="describing-data.html"><a href="describing-data.html#variance-and-standard-deviation"><i class="fa fa-check"></i><b>3.1.2</b> Variance and standard deviation</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="describing-data.html"><a href="describing-data.html#rounding-means-standard-deviatinos-and-other-quantities"><i class="fa fa-check"></i><b>3.2</b> Rounding means, standard deviatinos, and other quantities</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="describing-data.html"><a href="describing-data.html#coefficient-of-variation"><i class="fa fa-check"></i><b>3.2.1</b> Coefficient of variation</a></li>
+<li class="chapter" data-level="3.2.2" data-path="describing-data.html"><a href="describing-data.html#calculating-mean-and-sd-from-a-frequency-table"><i class="fa fa-check"></i><b>3.2.2</b> Calculating mean and SD from a frequency table</a></li>
+<li class="chapter" data-level="3.2.3" data-path="describing-data.html"><a href="describing-data.html#effect-of-changing-measurement-scale"><i class="fa fa-check"></i><b>3.2.3</b> Effect of changing measurement scale</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="describing-data.html"><a href="describing-data.html#median-and-interquartile-range-pg-73"><i class="fa fa-check"></i><b>3.3</b> Median and interquartile range (pg 73)</a></li>
+<li class="chapter" data-level="3.4" data-path="describing-data.html"><a href="describing-data.html#how-measures-of-location-and-spread-compare"><i class="fa fa-check"></i><b>3.4</b> How measures of location and spread compare</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="describing-data.html"><a href="describing-data.html#displaying-cumulative-relative-frequencies"><i class="fa fa-check"></i><b>3.4.1</b> Displaying cumulative relative frequencies</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="describing-data.html"><a href="describing-data.html#proportion"><i class="fa fa-check"></i><b>3.5</b> 3.5 Proportion</a></li>
+<li class="chapter" data-level="3.6" data-path="describing-data.html"><a href="describing-data.html#summary-2"><i class="fa fa-check"></i><b>3.6</b> 3.6 Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="chapter-4-estimating-with-uncertainty.html"><a href="chapter-4-estimating-with-uncertainty.html"><i class="fa fa-check"></i><b>4</b> Chapter 4 Estimating with Uncertainty</a><ul>
+<li class="chapter" data-level="4.1" data-path="chapter-4-estimating-with-uncertainty.html"><a href="chapter-4-estimating-with-uncertainty.html#the-sampling-distribution-of-an-estimate"><i class="fa fa-check"></i><b>4.1</b> 4.1 The sampling distribution of an estimate</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="chapter-4-estimating-with-uncertainty.html"><a href="chapter-4-estimating-with-uncertainty.html#example-4.1-the-length-of-human-genes"><i class="fa fa-check"></i><b>4.1.1</b> Example 4.1 The Length of Human genes</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="chapter-4-estimating-with-uncertainty.html"><a href="chapter-4-estimating-with-uncertainty.html#estimating-mean-gene-length-with-a-random-sample"><i class="fa fa-check"></i><b>4.2</b> Estimating mean gene length with a random sample</a></li>
+<li class="chapter" data-level="4.3" data-path="chapter-4-estimating-with-uncertainty.html"><a href="chapter-4-estimating-with-uncertainty.html#the-sampling-distribution-of-y.bar"><i class="fa fa-check"></i><b>4.3</b> The sampling distribution of Y.bar</a></li>
+<li class="chapter" data-level="4.4" data-path="chapter-4-estimating-with-uncertainty.html"><a href="chapter-4-estimating-with-uncertainty.html#measuring-the-uncertainty-of-an-estiamte"><i class="fa fa-check"></i><b>4.4</b> 4.2 Measuring the uncertainty of an estiamte</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="chapter-4-estimating-with-uncertainty.html"><a href="chapter-4-estimating-with-uncertainty.html#standard-error-se"><i class="fa fa-check"></i><b>4.4.1</b> Standard error (SE)</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="chapter-4-estimating-with-uncertainty.html"><a href="chapter-4-estimating-with-uncertainty.html#the-standard-error-of-y.bar"><i class="fa fa-check"></i><b>4.5</b> The Standard error of Y.bar</a></li>
+<li class="chapter" data-level="4.6" data-path="chapter-4-estimating-with-uncertainty.html"><a href="chapter-4-estimating-with-uncertainty.html#the-standard-error-of-y.bar-from-data"><i class="fa fa-check"></i><b>4.6</b> The standard error of Y.bar from data</a></li>
+<li class="chapter" data-level="4.7" data-path="chapter-4-estimating-with-uncertainty.html"><a href="chapter-4-estimating-with-uncertainty.html#confidence-interval-pg-102"><i class="fa fa-check"></i><b>4.7</b> 4.3 Confidence Interval (pg 102)</a></li>
+<li class="chapter" data-level="4.8" data-path="chapter-4-estimating-with-uncertainty.html"><a href="chapter-4-estimating-with-uncertainty.html#the-2se-rule-of-them"><i class="fa fa-check"></i><b>4.8</b> The 2SE Rule of them</a></li>
+<li class="chapter" data-level="4.9" data-path="chapter-4-estimating-with-uncertainty.html"><a href="chapter-4-estimating-with-uncertainty.html#error-bars"><i class="fa fa-check"></i><b>4.9</b> 4.4 Error bars</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="chapter-6-hypothesis-testing.html"><a href="chapter-6-hypothesis-testing.html"><i class="fa fa-check"></i><b>5</b> CHAPTER 6: HYPOTHESIS TESTING</a><ul>
+<li class="chapter" data-level="5.1" data-path="chapter-6-hypothesis-testing.html"><a href="chapter-6-hypothesis-testing.html#making-and-using-statistical-hypothesis"><i class="fa fa-check"></i><b>5.1</b> 6.1 Making and using statistical hypothesis</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="chapter-6-hypothesis-testing.html"><a href="chapter-6-hypothesis-testing.html#null-hypothesis"><i class="fa fa-check"></i><b>5.1.1</b> Null hypothesis</a></li>
+<li class="chapter" data-level="5.1.2" data-path="chapter-6-hypothesis-testing.html"><a href="chapter-6-hypothesis-testing.html#alternative-hypothesis"><i class="fa fa-check"></i><b>5.1.2</b> Alternative hypothesis</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="chapter-6-hypothesis-testing.html"><a href="chapter-6-hypothesis-testing.html#hypothesis-testing-an-example"><i class="fa fa-check"></i><b>5.2</b> 6.2 Hypothesis testing: an example</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="chapter-6-hypothesis-testing.html"><a href="chapter-6-hypothesis-testing.html#example-6.2-the-right-hand-of-toad"><i class="fa fa-check"></i><b>5.2.1</b> Example 6.2 The right hand of toad</a></li>
+<li class="chapter" data-level="5.2.2" data-path="chapter-6-hypothesis-testing.html"><a href="chapter-6-hypothesis-testing.html#stating-hypotheses"><i class="fa fa-check"></i><b>5.2.2</b> Stating hypotheses</a></li>
+<li class="chapter" data-level="5.2.3" data-path="chapter-6-hypothesis-testing.html"><a href="chapter-6-hypothesis-testing.html#test-statistic"><i class="fa fa-check"></i><b>5.2.3</b> Test statistic</a></li>
+<li class="chapter" data-level="5.2.4" data-path="chapter-6-hypothesis-testing.html"><a href="chapter-6-hypothesis-testing.html#the-null-distribution"><i class="fa fa-check"></i><b>5.2.4</b> The null distribution</a></li>
+<li class="chapter" data-level="5.2.5" data-path="chapter-6-hypothesis-testing.html"><a href="chapter-6-hypothesis-testing.html#table-6.2-1"><i class="fa fa-check"></i><b>5.2.5</b> Table 6.2-1</a></li>
+<li class="chapter" data-level="5.2.6" data-path="chapter-6-hypothesis-testing.html"><a href="chapter-6-hypothesis-testing.html#quantifying-uncertainty-the-p-value"><i class="fa fa-check"></i><b>5.2.6</b> Quantifying uncertainty: the P-value</a></li>
+<li class="chapter" data-level="5.2.7" data-path="chapter-6-hypothesis-testing.html"><a href="chapter-6-hypothesis-testing.html#figure-6.2-2"><i class="fa fa-check"></i><b>5.2.7</b> Figure 6.2-2</a></li>
+<li class="chapter" data-level="5.2.8" data-path="chapter-6-hypothesis-testing.html"><a href="chapter-6-hypothesis-testing.html#draw-the-appropriate-conclusion"><i class="fa fa-check"></i><b>5.2.8</b> Draw the appropriate conclusion</a></li>
+<li class="chapter" data-level="5.2.9" data-path="chapter-6-hypothesis-testing.html"><a href="chapter-6-hypothesis-testing.html#reporting-results"><i class="fa fa-check"></i><b>5.2.9</b> Reporting results</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="chapter-6-hypothesis-testing.html"><a href="chapter-6-hypothesis-testing.html#errors-in-hypothesis-testings"><i class="fa fa-check"></i><b>5.3</b> 6.3 Errors in hypothesis testings</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="chapter-6-hypothesis-testing.html"><a href="chapter-6-hypothesis-testing.html#type-i-and-type-ii-errors"><i class="fa fa-check"></i><b>5.3.1</b> Type I and Type II errors</a></li>
+<li class="chapter" data-level="5.3.2" data-path="chapter-6-hypothesis-testing.html"><a href="chapter-6-hypothesis-testing.html#table-6.3-1"><i class="fa fa-check"></i><b>5.3.2</b> Table 6.3-1</a></li>
+<li class="chapter" data-level="5.3.3" data-path="chapter-6-hypothesis-testing.html"><a href="chapter-6-hypothesis-testing.html#other-types-of-errors"><i class="fa fa-check"></i><b>5.3.3</b> Other types of errors</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="chapter-6-hypothesis-testing.html"><a href="chapter-6-hypothesis-testing.html#when-the-null-hypothesis-is-not-rejected"><i class="fa fa-check"></i><b>5.4</b> 6.4 When the null hypothesis is not rejected</a><ul>
+<li class="chapter" data-level="5.4.1" data-path="chapter-6-hypothesis-testing.html"><a href="chapter-6-hypothesis-testing.html#example-6.4-the-genetics-of-mirror-image-flowers"><i class="fa fa-check"></i><b>5.4.1</b> Example 6.4: The genetics of mirror-image flowers</a></li>
+<li class="chapter" data-level="5.4.2" data-path="chapter-6-hypothesis-testing.html"><a href="chapter-6-hypothesis-testing.html#figure-6.4-1"><i class="fa fa-check"></i><b>5.4.2</b> Figure 6.4-1</a></li>
+<li class="chapter" data-level="5.4.3" data-path="chapter-6-hypothesis-testing.html"><a href="chapter-6-hypothesis-testing.html#interpreting-a-non-significant-results."><i class="fa fa-check"></i><b>5.4.3</b> Interpreting a non-significant results.</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="chapter-6-hypothesis-testing.html"><a href="chapter-6-hypothesis-testing.html#one-sided-tests"><i class="fa fa-check"></i><b>5.5</b> 6.5 One-sided tests</a></li>
+<li class="chapter" data-level="5.6" data-path="chapter-6-hypothesis-testing.html"><a href="chapter-6-hypothesis-testing.html#hypothesis-testing-versus-confidence-intervals"><i class="fa fa-check"></i><b>5.6</b> Hypothesis testing versus confidence intervals</a></li>
+<li class="chapter" data-level="5.7" data-path="chapter-6-hypothesis-testing.html"><a href="chapter-6-hypothesis-testing.html#summary-3"><i class="fa fa-check"></i><b>5.7</b> 6.7 Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="contigency-analysis-associations-between-categorical-variables.html"><a href="contigency-analysis-associations-between-categorical-variables.html"><i class="fa fa-check"></i><b>6</b> Contigency Analysis: Associations between categorical variables</a><ul>
+<li class="chapter" data-level="6.1" data-path="contigency-analysis-associations-between-categorical-variables.html"><a href="contigency-analysis-associations-between-categorical-variables.html#examples-of-categorical-resposne-variables"><i class="fa fa-check"></i><b>6.1</b> Examples of categorical resposne variables</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="contigency-analysis-associations-between-categorical-variables.html"><a href="contigency-analysis-associations-between-categorical-variables.html#example-9.3-your-litter-box-and-your-brain"><i class="fa fa-check"></i><b>6.1.1</b> Example 9.3: Your litter box and your brain</a></li>
+<li class="chapter" data-level="6.1.2" data-path="contigency-analysis-associations-between-categorical-variables.html"><a href="contigency-analysis-associations-between-categorical-variables.html#table-9.3-1"><i class="fa fa-check"></i><b>6.1.2</b> Table 9.3-1</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="contigency-analysis-associations-between-categorical-variables.html"><a href="contigency-analysis-associations-between-categorical-variables.html#the-chi2-contingency-test"><i class="fa fa-check"></i><b>6.2</b> 9.4 The Chi^2 contingency test</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="contigency-analysis-associations-between-categorical-variables.html"><a href="contigency-analysis-associations-between-categorical-variables.html#example-9.4-the-gnarly-worm-gets-the-bird"><i class="fa fa-check"></i><b>6.2.1</b> Example 9.4: The gnarly worm gets the bird</a></li>
+<li class="chapter" data-level="6.2.2" data-path="contigency-analysis-associations-between-categorical-variables.html"><a href="contigency-analysis-associations-between-categorical-variables.html#hypotheses"><i class="fa fa-check"></i><b>6.2.2</b> Hypotheses</a></li>
+<li class="chapter" data-level="6.2.3" data-path="contigency-analysis-associations-between-categorical-variables.html"><a href="contigency-analysis-associations-between-categorical-variables.html#example-9.5-the-feeding-habits-of-vampire-bats"><i class="fa fa-check"></i><b>6.2.3</b> Example 9.5: The feeding habits of vampire bats</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="comparing-two-means.html"><a href="comparing-two-means.html"><i class="fa fa-check"></i><b>7</b> Comparing Two Means</a><ul>
+<li class="chapter" data-level="7.0.1" data-path="comparing-two-means.html"><a href="comparing-two-means.html#paried-samples-versus-two-independent-samples"><i class="fa fa-check"></i><b>7.0.1</b> 12.1 Paried samples versus two independent samples</a></li>
+<li class="chapter" data-level="7.0.2" data-path="comparing-two-means.html"><a href="comparing-two-means.html#paired-comparisons-of-means"><i class="fa fa-check"></i><b>7.0.2</b> 12.2 Paired comparisons of means</a></li>
+<li class="chapter" data-level="7.0.3" data-path="comparing-two-means.html"><a href="comparing-two-means.html#two-sample-comparison-of-the-means"><i class="fa fa-check"></i><b>7.0.3</b> 12.3 Two-sample comparison of the means</a></li>
+<li class="chapter" data-level="7.0.4" data-path="comparing-two-means.html"><a href="comparing-two-means.html#the-fallacy-of-indirect-comparisons"><i class="fa fa-check"></i><b>7.0.4</b> 12.5 The fallacy of indirect comparisons</a></li>
+<li class="chapter" data-level="7.0.5" data-path="comparing-two-means.html"><a href="comparing-two-means.html#interpreting-overlap-of-confidence-intervals"><i class="fa fa-check"></i><b>7.0.5</b> 12.6 Interpreting overlap of confidence intervals</a></li>
+<li class="chapter" data-level="7.0.6" data-path="comparing-two-means.html"><a href="comparing-two-means.html#comparing-variances--"><i class="fa fa-check"></i><b>7.0.6</b> 12.7 Comparing variances -</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="handling-violations-of-assumptions.html"><a href="handling-violations-of-assumptions.html"><i class="fa fa-check"></i><b>8</b> Handling Violations of Assumptions</a><ul>
+<li class="chapter" data-level="8.1" data-path="handling-violations-of-assumptions.html"><a href="handling-violations-of-assumptions.html#introduction-pages-369---368"><i class="fa fa-check"></i><b>8.1</b> Introduction: pages 369 - 368</a></li>
+<li class="chapter" data-level="8.2" data-path="handling-violations-of-assumptions.html"><a href="handling-violations-of-assumptions.html#when-to-ignore-violations-of-assumptions"><i class="fa fa-check"></i><b>8.2</b> 13.2 When to ignore violations of assumptions</a><ul>
+<li class="chapter" data-level="8.2.1" data-path="handling-violations-of-assumptions.html"><a href="handling-violations-of-assumptions.html#violations-of-normality-pg-375"><i class="fa fa-check"></i><b>8.2.1</b> Violations of Normality (pg 375)</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="handling-violations-of-assumptions.html"><a href="handling-violations-of-assumptions.html#data-transformations"><i class="fa fa-check"></i><b>8.3</b> 13.3 Data transformations</a><ul>
+<li class="chapter" data-level="8.3.1" data-path="handling-violations-of-assumptions.html"><a href="handling-violations-of-assumptions.html#log-transformation-pg-377"><i class="fa fa-check"></i><b>8.3.1</b> Log transformation (pg 377)</a></li>
+<li class="chapter" data-level="8.3.2" data-path="handling-violations-of-assumptions.html"><a href="handling-violations-of-assumptions.html#figure-13.3-1"><i class="fa fa-check"></i><b>8.3.2</b> Figure 13.3-1</a></li>
+<li class="chapter" data-level="8.3.3" data-path="handling-violations-of-assumptions.html"><a href="handling-violations-of-assumptions.html#the-square-root-transformation-pg-381"><i class="fa fa-check"></i><b>8.3.3</b> The square-root transformation (pg 381)</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="handling-violations-of-assumptions.html"><a href="handling-violations-of-assumptions.html#nonparameteric-alternatives-to-one-sample-and-paired-t-test"><i class="fa fa-check"></i><b>8.4</b> # 13.4 Nonparameteric alternatives to one-sample and paired t-test</a><ul>
+<li class="chapter" data-level="8.4.1" data-path="handling-violations-of-assumptions.html"><a href="handling-violations-of-assumptions.html#sign-test---skipother-specific-non-parametric-methods---skip"><i class="fa fa-check"></i><b>8.4.1</b> [Sign test - SKIP][Other specific non-parametric methods - skip]</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="handling-violations-of-assumptions.html"><a href="handling-violations-of-assumptions.html#permutation-tests"><i class="fa fa-check"></i><b>8.5</b> 13.8 Permutation tests</a></li>
+<li class="chapter" data-level="8.6" data-path="handling-violations-of-assumptions.html"><a href="handling-violations-of-assumptions.html#summary-4"><i class="fa fa-check"></i><b>8.6</b> 13.9 Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="experimental-design.html"><a href="experimental-design.html"><i class="fa fa-check"></i><b>9</b> Experimental Design</a><ul>
+<li class="chapter" data-level="9.1" data-path="experimental-design.html"><a href="experimental-design.html#why-do-experiments"><i class="fa fa-check"></i><b>9.1</b> 14.1 Why do experiments?</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="experimental-design.html"><a href="experimental-design.html#confounding-variables"><i class="fa fa-check"></i><b>9.1.1</b> Confounding variables</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="experimental-design.html"><a href="experimental-design.html#lessons-from-clinical-trials"><i class="fa fa-check"></i><b>9.2</b> 14.2 Lessons from clinical trials</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="experimental-design.html"><a href="experimental-design.html#design-components"><i class="fa fa-check"></i><b>9.2.1</b> Design components</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="experimental-design.html"><a href="experimental-design.html#how-to-reduce-bias"><i class="fa fa-check"></i><b>9.3</b> 14.3 How to reduce bias</a><ul>
+<li class="chapter" data-level="9.3.1" data-path="experimental-design.html"><a href="experimental-design.html#simultaneous-control-group"><i class="fa fa-check"></i><b>9.3.1</b> Simultaneous control group</a></li>
+<li class="chapter" data-level="9.3.2" data-path="experimental-design.html"><a href="experimental-design.html#randomization"><i class="fa fa-check"></i><b>9.3.2</b> Randomization</a></li>
+<li class="chapter" data-level="9.3.3" data-path="experimental-design.html"><a href="experimental-design.html#blinding"><i class="fa fa-check"></i><b>9.3.3</b> Blinding</a></li>
+<li class="chapter" data-level="9.3.4" data-path="experimental-design.html"><a href="experimental-design.html#replication"><i class="fa fa-check"></i><b>9.3.4</b> Replication</a></li>
+<li class="chapter" data-level="9.3.5" data-path="experimental-design.html"><a href="experimental-design.html#balance"><i class="fa fa-check"></i><b>9.3.5</b> Balance</a></li>
+<li class="chapter" data-level="9.3.6" data-path="experimental-design.html"><a href="experimental-design.html#blocking"><i class="fa fa-check"></i><b>9.3.6</b> Blocking</a></li>
+<li class="chapter" data-level="9.3.7" data-path="experimental-design.html"><a href="experimental-design.html#example-14.4a"><i class="fa fa-check"></i><b>9.3.7</b> Example 14.4A</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="experimental-design.html"><a href="experimental-design.html#experiments-with-more-than-on-factor"><i class="fa fa-check"></i><b>9.4</b> 14.5 Experiments with more than on factor</a></li>
+<li class="chapter" data-level="9.5" data-path="experimental-design.html"><a href="experimental-design.html#what-if-you-cant-do-experiment"><i class="fa fa-check"></i><b>9.5</b> 14.6 What if you can’t do experiment</a></li>
+<li class="chapter" data-level="9.6" data-path="experimental-design.html"><a href="experimental-design.html#choosing-a-sample-size"><i class="fa fa-check"></i><b>9.6</b> 14.7 Choosing a sample size</a><ul>
+<li class="chapter" data-level="9.6.1" data-path="experimental-design.html"><a href="experimental-design.html#plan-for-precision"><i class="fa fa-check"></i><b>9.6.1</b> Plan for precision</a></li>
+<li class="chapter" data-level="9.6.2" data-path="experimental-design.html"><a href="experimental-design.html#plan-for-power"><i class="fa fa-check"></i><b>9.6.2</b> Plan for power</a></li>
+<li class="chapter" data-level="9.6.3" data-path="experimental-design.html"><a href="experimental-design.html#plan-for-data-loss"><i class="fa fa-check"></i><b>9.6.3</b> Plan for data loss</a></li>
+</ul></li>
+<li class="chapter" data-level="9.7" data-path="experimental-design.html"><a href="experimental-design.html#summary-5"><i class="fa fa-check"></i><b>9.7</b> 14.8 Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="comparing-means-of-more-than-two-groups.html"><a href="comparing-means-of-more-than-two-groups.html"><i class="fa fa-check"></i><b>10</b> Comparing Means of More Than Two Groups</a><ul>
+<li class="chapter" data-level="10.1" data-path="comparing-means-of-more-than-two-groups.html"><a href="comparing-means-of-more-than-two-groups.html#the-analysis-of-variance"><i class="fa fa-check"></i><b>10.1</b> 15.1 The Analysis of Variance</a><ul>
+<li class="chapter" data-level="10.1.1" data-path="comparing-means-of-more-than-two-groups.html"><a href="comparing-means-of-more-than-two-groups.html#example-15.1-the-knees-who-say-night"><i class="fa fa-check"></i><b>10.1.1</b> Example 15.1 The knees who say night</a></li>
+<li class="chapter" data-level="10.1.2" data-path="comparing-means-of-more-than-two-groups.html"><a href="comparing-means-of-more-than-two-groups.html#figure-15.1-1"><i class="fa fa-check"></i><b>10.1.2</b> Figure 15.1-1</a></li>
+<li class="chapter" data-level="10.1.3" data-path="comparing-means-of-more-than-two-groups.html"><a href="comparing-means-of-more-than-two-groups.html#hypotheses-1"><i class="fa fa-check"></i><b>10.1.3</b> Hypotheses</a></li>
+<li class="chapter" data-level="10.1.4" data-path="comparing-means-of-more-than-two-groups.html"><a href="comparing-means-of-more-than-two-groups.html#anova-in-a-nutshell"><i class="fa fa-check"></i><b>10.1.4</b> ANOVA in a nutshell</a></li>
+<li class="chapter" data-level="10.1.5" data-path="comparing-means-of-more-than-two-groups.html"><a href="comparing-means-of-more-than-two-groups.html#anova-tables"><i class="fa fa-check"></i><b>10.1.5</b> ANOVA tables</a></li>
+<li class="chapter" data-level="10.1.6" data-path="comparing-means-of-more-than-two-groups.html"><a href="comparing-means-of-more-than-two-groups.html#partitioning-the-sum-of-square-pg-464"><i class="fa fa-check"></i><b>10.1.6</b> Partitioning the sum of square (pg 464)</a></li>
+<li class="chapter" data-level="10.1.7" data-path="comparing-means-of-more-than-two-groups.html"><a href="comparing-means-of-more-than-two-groups.html#calculating-the-mean-square-pg-466"><i class="fa fa-check"></i><b>10.1.7</b> Calculating the mean square (pg 466)</a></li>
+<li class="chapter" data-level="10.1.8" data-path="comparing-means-of-more-than-two-groups.html"><a href="comparing-means-of-more-than-two-groups.html#the-variance-ratio-f-pg-467"><i class="fa fa-check"></i><b>10.1.8</b> The Variance ratio, F (pg 467)</a></li>
+<li class="chapter" data-level="10.1.9" data-path="comparing-means-of-more-than-two-groups.html"><a href="comparing-means-of-more-than-two-groups.html#variation-explained-r2"><i class="fa fa-check"></i><b>10.1.9</b> Variation explained R2</a></li>
+<li class="chapter" data-level="10.1.10" data-path="comparing-means-of-more-than-two-groups.html"><a href="comparing-means-of-more-than-two-groups.html#anova-with-two-groups"><i class="fa fa-check"></i><b>10.1.10</b> ANOVA with two groups</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="comparing-means-of-more-than-two-groups.html"><a href="comparing-means-of-more-than-two-groups.html#assumptions-and-alternatives"><i class="fa fa-check"></i><b>10.2</b> 15.2 Assumptions and alternatives</a><ul>
+<li class="chapter" data-level="10.2.1" data-path="comparing-means-of-more-than-two-groups.html"><a href="comparing-means-of-more-than-two-groups.html#robustness-of-anova-pg-470"><i class="fa fa-check"></i><b>10.2.1</b> Robustness of ANOVA (pg 470)</a></li>
+<li class="chapter" data-level="10.2.2" data-path="comparing-means-of-more-than-two-groups.html"><a href="comparing-means-of-more-than-two-groups.html#data-transformations-pg-471"><i class="fa fa-check"></i><b>10.2.2</b> Data transformations (pg 471)</a></li>
+<li class="chapter" data-level="10.2.3" data-path="comparing-means-of-more-than-two-groups.html"><a href="comparing-means-of-more-than-two-groups.html#nonparametric-alternatives-to-anova-pg-471"><i class="fa fa-check"></i><b>10.2.3</b> Nonparametric alternatives to ANOVA (pg 471)</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="comparing-means-of-more-than-two-groups.html"><a href="comparing-means-of-more-than-two-groups.html#planned-comparisons"><i class="fa fa-check"></i><b>10.3</b> 15.3 Planned comparisons</a><ul>
+<li class="chapter" data-level="10.3.1" data-path="comparing-means-of-more-than-two-groups.html"><a href="comparing-means-of-more-than-two-groups.html#planned-comparisons-between-means-pg-472-3"><i class="fa fa-check"></i><b>10.3.1</b> Planned comparisons between means (pg 472-3)</a></li>
+</ul></li>
+<li class="chapter" data-level="10.4" data-path="comparing-means-of-more-than-two-groups.html"><a href="comparing-means-of-more-than-two-groups.html#unplanned-comparisons"><i class="fa fa-check"></i><b>10.4</b> 15.4 Unplanned comparisons</a></li>
+<li class="chapter" data-level="10.5" data-path="comparing-means-of-more-than-two-groups.html"><a href="comparing-means-of-more-than-two-groups.html#example-15.4-wood-wide-web"><i class="fa fa-check"></i><b>10.5</b> Example 15.4 Wood Wide Web</a></li>
+<li class="chapter" data-level="10.6" data-path="comparing-means-of-more-than-two-groups.html"><a href="comparing-means-of-more-than-two-groups.html#assumptions-pg-477"><i class="fa fa-check"></i><b>10.6</b> Assumptions (pg 477)</a><ul>
+<li class="chapter" data-level="10.6.1" data-path="comparing-means-of-more-than-two-groups.html"><a href="comparing-means-of-more-than-two-groups.html#fixed-and-random-effects"><i class="fa fa-check"></i><b>10.6.1</b> [15.5 Fixed and Random effects ]</a></li>
+<li class="chapter" data-level="10.6.2" data-path="comparing-means-of-more-than-two-groups.html"><a href="comparing-means-of-more-than-two-groups.html#anova-with-randomly-chosen-groups---skip"><i class="fa fa-check"></i><b>10.6.2</b> [15.6 ANOVA with randomly chosen groups - SKIP!]</a></li>
+</ul></li>
+<li class="chapter" data-level="10.7" data-path="comparing-means-of-more-than-two-groups.html"><a href="comparing-means-of-more-than-two-groups.html#summary-6"><i class="fa fa-check"></i><b>10.7</b> 15.7 Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="regression.html"><a href="regression.html"><i class="fa fa-check"></i><b>11</b> Regression</a><ul>
+<li class="chapter" data-level="11.1" data-path="regression.html"><a href="regression.html#linear-regression"><i class="fa fa-check"></i><b>11.1</b> 17.1 Linear Regression</a><ul>
+<li class="chapter" data-level="11.1.1" data-path="regression.html"><a href="regression.html#ex-17.1-the-lions-nose"><i class="fa fa-check"></i><b>11.1.1</b> Ex 17.1 The lion’s nose</a></li>
+<li class="chapter" data-level="11.1.2" data-path="regression.html"><a href="regression.html#the-method-of-least-squares-pg-542"><i class="fa fa-check"></i><b>11.1.2</b> The method of least squares (pg 542)</a></li>
+<li class="chapter" data-level="11.1.3" data-path="regression.html"><a href="regression.html#figures-17.1-2"><i class="fa fa-check"></i><b>11.1.3</b> Figures 17.1-2</a></li>
+<li class="chapter" data-level="11.1.4" data-path="regression.html"><a href="regression.html#figure-17.1-3"><i class="fa fa-check"></i><b>11.1.4</b> FIgure 17.1-3</a></li>
+<li class="chapter" data-level="11.1.5" data-path="regression.html"><a href="regression.html#calculating-the-slope-and-intercept-pg-544"><i class="fa fa-check"></i><b>11.1.5</b> Calculating the slope and intercept (pg 544)</a></li>
+<li class="chapter" data-level="11.1.6" data-path="regression.html"><a href="regression.html#populations-and-samples-pg-545"><i class="fa fa-check"></i><b>11.1.6</b> Populations and samples (pg 545)</a></li>
+<li class="chapter" data-level="11.1.7" data-path="regression.html"><a href="regression.html#predicted-values-aka-y-hat-pg-546"><i class="fa fa-check"></i><b>11.1.7</b> Predicted values (aka “Y hat”, pg 546)</a></li>
+<li class="chapter" data-level="11.1.8" data-path="regression.html"><a href="regression.html#residuals-pg-546"><i class="fa fa-check"></i><b>11.1.8</b> Residuals (pg 546)</a></li>
+<li class="chapter" data-level="11.1.9" data-path="regression.html"><a href="regression.html#standard-error-of-the-slope-pg-547"><i class="fa fa-check"></i><b>11.1.9</b> Standard error of the slope (pg 547)</a></li>
+<li class="chapter" data-level="11.1.10" data-path="regression.html"><a href="regression.html#confidence-interval-for-the-slope-pg-548"><i class="fa fa-check"></i><b>11.1.10</b> Confidence interval for the slope (pg 548)</a></li>
+</ul></li>
+<li class="chapter" data-level="11.2" data-path="regression.html"><a href="regression.html#confidence-in-predictions"><i class="fa fa-check"></i><b>11.2</b> 17.2 Confidence in predictions</a><ul>
+<li class="chapter" data-level="11.2.1" data-path="regression.html"><a href="regression.html#confidence-intervals-for-predictions-pg-549"><i class="fa fa-check"></i><b>11.2.1</b> Confidence intervals for predictions (pg 549)</a></li>
+<li class="chapter" data-level="11.2.2" data-path="regression.html"><a href="regression.html#figure-17.2-1"><i class="fa fa-check"></i><b>11.2.2</b> Figure 17.2-1</a></li>
+<li class="chapter" data-level="11.2.3" data-path="regression.html"><a href="regression.html#extrapolation-pg-550"><i class="fa fa-check"></i><b>11.2.3</b> Extrapolation (pg 550)</a></li>
+<li class="chapter" data-level="11.2.4" data-path="regression.html"><a href="regression.html#figure-17.2-2"><i class="fa fa-check"></i><b>11.2.4</b> Figure 17.2-2</a></li>
+</ul></li>
+<li class="chapter" data-level="11.3" data-path="regression.html"><a href="regression.html#testing-hypotheses-about-a-slope"><i class="fa fa-check"></i><b>11.3</b> 17.3 Testing hypotheses about a slope</a><ul>
+<li class="chapter" data-level="11.3.1" data-path="regression.html"><a href="regression.html#example-17.3-prarie-home-campion"><i class="fa fa-check"></i><b>11.3.1</b> Example 17.3 Prarie Home Campion</a></li>
+<li class="chapter" data-level="11.3.2" data-path="regression.html"><a href="regression.html#figure-17.3-1"><i class="fa fa-check"></i><b>11.3.2</b> Figure 17.3-1</a></li>
+<li class="chapter" data-level="11.3.3" data-path="regression.html"><a href="regression.html#the-t-test-of-regression-slope-pg-552"><i class="fa fa-check"></i><b>11.3.3</b> The t-test of regression slope (pg 552)</a></li>
+<li class="chapter" data-level="11.3.4" data-path="regression.html"><a href="regression.html#the-anova-approach-pg-554"><i class="fa fa-check"></i><b>11.3.4</b> The ANOVA approach (pg 554)</a></li>
+<li class="chapter" data-level="11.3.5" data-path="regression.html"><a href="regression.html#using-r2-to-measure-the-fit-of-the-line-to-data-pg-555"><i class="fa fa-check"></i><b>11.3.5</b> Using R2 to measure the fit of the line to data (pg 555)</a></li>
+</ul></li>
+<li class="chapter" data-level="11.4" data-path="regression.html"><a href="regression.html#regression-toward-the-mean"><i class="fa fa-check"></i><b>11.4</b> 17.4 Regression toward the mean</a></li>
+<li class="chapter" data-level="11.5" data-path="regression.html"><a href="regression.html#assumptions-of-regression"><i class="fa fa-check"></i><b>11.5</b> 17.5 Assumptions of regression</a><ul>
+<li class="chapter" data-level="11.5.1" data-path="regression.html"><a href="regression.html#figure-17.5-1"><i class="fa fa-check"></i><b>11.5.1</b> Figure 17.5-1</a></li>
+<li class="chapter" data-level="11.5.2" data-path="regression.html"><a href="regression.html#outliers"><i class="fa fa-check"></i><b>11.5.2</b> Outliers</a></li>
+<li class="chapter" data-level="11.5.3" data-path="regression.html"><a href="regression.html#figure-17.5-2"><i class="fa fa-check"></i><b>11.5.3</b> Figure 17.5-2</a></li>
+<li class="chapter" data-level="11.5.4" data-path="regression.html"><a href="regression.html#detecting-nonlinearity-pg-559"><i class="fa fa-check"></i><b>11.5.4</b> Detecting nonlinearity (pg 559)</a></li>
+<li class="chapter" data-level="11.5.5" data-path="regression.html"><a href="regression.html#detecting-non-normality-and-unequal-variance-pg-559"><i class="fa fa-check"></i><b>11.5.5</b> Detecting non-normality and unequal variance (pg 559)</a></li>
+</ul></li>
+<li class="chapter" data-level="11.6" data-path="regression.html"><a href="regression.html#transformations"><i class="fa fa-check"></i><b>11.6</b> 17.6 Transformations</a><ul>
+<li class="chapter" data-level="11.6.1" data-path="regression.html"><a href="regression.html#figure-17.6-1"><i class="fa fa-check"></i><b>11.6.1</b> Figure 17.6-1</a></li>
+<li class="chapter" data-level="11.6.2" data-path="regression.html"><a href="regression.html#figure-17.6-2"><i class="fa fa-check"></i><b>11.6.2</b> Figure 17.6-2</a></li>
+<li class="chapter" data-level="11.6.3" data-path="regression.html"><a href="regression.html#figure-17.6-3"><i class="fa fa-check"></i><b>11.6.3</b> Figure 17.6-3</a></li>
+</ul></li>
+<li class="chapter" data-level="11.7" data-path="regression.html"><a href="regression.html#the-effects-of-measurement-error-on-regression"><i class="fa fa-check"></i><b>11.7</b> [17.7 The effects of measurement error on regression]</a></li>
+<li class="chapter" data-level="11.8" data-path="regression.html"><a href="regression.html#nonlinear-regression"><i class="fa fa-check"></i><b>11.8</b> 17.8 Nonlinear regression</a><ul>
+<li class="chapter" data-level="11.8.1" data-path="regression.html"><a href="regression.html#a-curve-with-an-asymptote"><i class="fa fa-check"></i><b>11.8.1</b> [A curve with an asymptote]</a></li>
+<li class="chapter" data-level="11.8.2" data-path="regression.html"><a href="regression.html#quadratic-curves-pg-565"><i class="fa fa-check"></i><b>11.8.2</b> Quadratic curves (pg 565)</a></li>
+<li class="chapter" data-level="11.8.3" data-path="regression.html"><a href="regression.html#figure-17.8-2"><i class="fa fa-check"></i><b>11.8.3</b> Figure 17.8-2</a></li>
+<li class="chapter" data-level="11.8.4" data-path="regression.html"><a href="regression.html#formula-free-curve-fitting-pg-566"><i class="fa fa-check"></i><b>11.8.4</b> Formula-free curve fitting (pg 566)]</a></li>
+<li class="chapter" data-level="11.8.5" data-path="regression.html"><a href="regression.html#ex-17.8-the-incredible-shrinking-seal"><i class="fa fa-check"></i><b>11.8.5</b> Ex 17.8 The incredible shrinking seal</a></li>
+<li class="chapter" data-level="11.8.6" data-path="regression.html"><a href="regression.html#figure-17.8-3"><i class="fa fa-check"></i><b>11.8.6</b> Figure 17.8-3</a></li>
+</ul></li>
+<li class="chapter" data-level="11.9" data-path="regression.html"><a href="regression.html#logistic-regression-fitting-a-binary-response-variable-pg-567"><i class="fa fa-check"></i><b>11.9</b> 17.9 Logistic regression: fitting a binary response variable (pg 567)</a><ul>
+<li class="chapter" data-level="11.9.1" data-path="regression.html"><a href="regression.html#figure-17.9-1"><i class="fa fa-check"></i><b>11.9.1</b> Figure 17.9-1</a></li>
+</ul></li>
+<li class="chapter" data-level="11.10" data-path="regression.html"><a href="regression.html#summary-7"><i class="fa fa-check"></i><b>11.10</b> 17.10 Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="appendix-a-designing-successful-field-studies-gotelli-ellison-1st-edition.html"><a href="appendix-a-designing-successful-field-studies-gotelli-ellison-1st-edition.html"><i class="fa fa-check"></i><b>A</b> Appendix A: Designing Successful Field Studies, Gotelli &amp; Ellison, 1st Edition</a><ul>
+<li class="chapter" data-level="A.1" data-path="appendix-a-designing-successful-field-studies-gotelli-ellison-1st-edition.html"><a href="appendix-a-designing-successful-field-studies-gotelli-ellison-1st-edition.html#chapter-6-designing-successful-field-studies"><i class="fa fa-check"></i><b>A.1</b> Chapter 6 Designing Successful Field Studies</a><ul>
+<li class="chapter" data-level="A.1.1" data-path="appendix-a-designing-successful-field-studies-gotelli-ellison-1st-edition.html"><a href="appendix-a-designing-successful-field-studies-gotelli-ellison-1st-edition.html#what-is-the-effect-of-factor-x-on-variable-y-pg-138"><i class="fa fa-check"></i><b>A.1.1</b> What is the effect of factor X on variable Y? (pg 138)</a></li>
+<li class="chapter" data-level="A.1.2" data-path="appendix-a-designing-successful-field-studies-gotelli-ellison-1st-edition.html"><a href="appendix-a-designing-successful-field-studies-gotelli-ellison-1st-edition.html#manipulative-experiments-pg-139"><i class="fa fa-check"></i><b>A.1.2</b> Manipulative experiments (pg 139)</a></li>
+<li class="chapter" data-level="A.1.3" data-path="appendix-a-designing-successful-field-studies-gotelli-ellison-1st-edition.html"><a href="appendix-a-designing-successful-field-studies-gotelli-ellison-1st-edition.html#natural-experiments-pg-141"><i class="fa fa-check"></i><b>A.1.3</b> Natural Experiments (pg 141)</a></li>
+<li class="chapter" data-level="A.1.4" data-path="appendix-a-designing-successful-field-studies-gotelli-ellison-1st-edition.html"><a href="appendix-a-designing-successful-field-studies-gotelli-ellison-1st-edition.html#replication-pg-149"><i class="fa fa-check"></i><b>A.1.4</b> Replication (pg 149)</a></li>
+</ul></li>
+<li class="chapter" data-level="A.2" data-path="appendix-a-designing-successful-field-studies-gotelli-ellison-1st-edition.html"><a href="appendix-a-designing-successful-field-studies-gotelli-ellison-1st-edition.html#avoiding-confounding-factors-153"><i class="fa fa-check"></i><b>A.2</b> Avoiding Confounding Factors (153)</a></li>
+<li class="chapter" data-level="A.3" data-path="appendix-a-designing-successful-field-studies-gotelli-ellison-1st-edition.html"><a href="appendix-a-designing-successful-field-studies-gotelli-ellison-1st-edition.html#replicaiton-randomization-154"><i class="fa fa-check"></i><b>A.3</b> Replicaiton &amp; randomization (154)</a><ul>
+<li class="chapter" data-level="A.3.1" data-path="appendix-a-designing-successful-field-studies-gotelli-ellison-1st-edition.html"><a href="appendix-a-designing-successful-field-studies-gotelli-ellison-1st-edition.html#does-the-range-of-treatments-or-census-categories-bracket-or-span-the-range-of-possible-environmental-conditions"><i class="fa fa-check"></i><b>A.3.1</b> Does the range of Treatments or Census Categories Bracket or Span the Range of Possible Environmental Conditions?</a></li>
+<li class="chapter" data-level="A.3.2" data-path="appendix-a-designing-successful-field-studies-gotelli-ellison-1st-edition.html"><a href="appendix-a-designing-successful-field-studies-gotelli-ellison-1st-edition.html#have-appropriate-controls-been-established-to-ensure-that-results-relfect-variation-only-in-the-factor-of-interest"><i class="fa fa-check"></i><b>A.3.2</b> Have Appropriate Controls Been Established to Ensure That Results Relfect Variation only in the Factor of Interest?</a></li>
+<li class="chapter" data-level="A.3.3" data-path="appendix-a-designing-successful-field-studies-gotelli-ellison-1st-edition.html"><a href="appendix-a-designing-successful-field-studies-gotelli-ellison-1st-edition.html#have-all-replicates-been-manipulated-the-same-way-except-for-the-intended-treatment-application"><i class="fa fa-check"></i><b>A.3.3</b> Have all replicates been manipulated the same way except for the Intended Treatment Application?</a></li>
+<li class="chapter" data-level="A.3.4" data-path="appendix-a-designing-successful-field-studies-gotelli-ellison-1st-edition.html"><a href="appendix-a-designing-successful-field-studies-gotelli-ellison-1st-edition.html#summary-8"><i class="fa fa-check"></i><b>A.3.4</b> Summary</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Companion to The Analysis of Biological Data</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="describing-data" class="section level1">
+<h1><span class="header-section-number">Chapter 3</span> Describing Data</h1>
+<div style="white-space: pre-line;">Reading Guide
+Chapter 3: Describing data
+Whitlock, MC and D Schluter. 2015. The Analysis of Biological Data, 2nd ed. Roberts &amp; Company, Greenwood Village, Colorado.
+Book website: <a href="http://whitlockschluter.zoology.ubc.ca/" class="uri">http://whitlockschluter.zoology.ubc.ca/</a>
+Publisher: <a href="https://goo.gl/mSVUHe" class="uri">https://goo.gl/mSVUHe</a>
+Notes compiled by Nathan Brouwer (<a href="mailto:brouwern@gmail.com">brouwern@gmail.com</a>)</div>
+<p>Study Guide: Test 1 - Chapter 3 Analysis of Biological Data 2nd ed.</p>
+<div id="arithemetic-mean-and-standard-deviation" class="section level2">
+<h2><span class="header-section-number">3.1</span> 3.1 Arithemetic mean and standard deviation</h2>
+<div id="the-sample-mean" class="section level3">
+<h3><span class="header-section-number">3.1.1</span> The sample mean</h3>
+<p>We call the <strong>sample mean</strong> y.bar (In contrast in chapter 4 we talk about “mu”, the population mean.)</p>
+</div>
+<div id="variance-and-standard-deviation" class="section level3">
+<h3><span class="header-section-number">3.1.2</span> Variance and standard deviation</h3>
+<p>I won’t ask you to write these equations from memory, but I will expect you to know the difference between the equation for the variance vs. the standard deviation, what the numerator and denominator mean, etc. For example, the square root of the variance is the standard deviation; the numerator of the variance is the “sum of square”; the “n” in the denominator of these equations is the sample size.</p>
+<p>Vocab</p>
+<p><strong>Variance:</strong> A measure of spread / variability of the data; the precursor to the standard deviation. The numerator is the sum of squares. The n in denominator is the sample size. You never plot the SD on a graph.</p>
+<p><span class="math display">\[s^2 = {\frac{\sum\limits_{i=1}^{n} \left(Y_{i} - \bar{Y}\right)^{2}} {n-1}}\]</span></p>
+<p><strong>Standard deviation</strong> “A common measure of the spread of a distribution. It indicates just how different measurements typically are from the mean.” While very useful, we rarely plot the SD on a graph.</p>
+<p><span class="math display">\[s = \sqrt{\frac{\sum\limits_{i=1}^{n} \left(Y_{i} - \bar{Y}\right)^{2}} {n-1}}\]</span></p>
+<p><strong>Sum of square</strong>: The numerator in the equations for the variance (s^2; var) and standard deviation (s; SD.</p>
+</div>
+</div>
+<div id="rounding-means-standard-deviatinos-and-other-quantities" class="section level2">
+<h2><span class="header-section-number">3.2</span> Rounding means, standard deviatinos, and other quantities</h2>
+<p>A good little section on how to round numbers</p>
+<div id="coefficient-of-variation" class="section level3">
+<h3><span class="header-section-number">3.2.1</span> Coefficient of variation</h3>
+<p>[I did not cover this in 2017]</p>
+</div>
+<div id="calculating-mean-and-sd-from-a-frequency-table" class="section level3">
+<h3><span class="header-section-number">3.2.2</span> Calculating mean and SD from a frequency table</h3>
+<p>[skipped in 2017]</p>
+</div>
+<div id="effect-of-changing-measurement-scale" class="section level3">
+<h3><span class="header-section-number">3.2.3</span> Effect of changing measurement scale</h3>
+<p>[skip]</p>
+</div>
+</div>
+<div id="median-and-interquartile-range-pg-73" class="section level2">
+<h2><span class="header-section-number">3.3</span> Median and interquartile range (pg 73)</h2>
+<p>Vocab:</p>
+<p><strong>Median</strong></p>
+<p><strong>Interquartile range (IQR):</strong> “The difference between the 3rd and 1st quartiles of the data. It is the span of the middle 50% of the data.</p>
+<p><strong>First quartile:</strong></p>
+<p><strong>Third quartile:</strong></p>
+<p><strong>Boxplot</strong></p>
+<p>Note that the “whiskers” extending above and below the bar plot are NOT error bars! They represent the range.</p>
+</div>
+<div id="how-measures-of-location-and-spread-compare" class="section level2">
+<h2><span class="header-section-number">3.4</span> How measures of location and spread compare</h2>
+<p>This is a good section for understanding the difference between the mean and median.</p>
+<p>“Median and mean measure different aspects of the location of a distribution. The median is the middle value of the data, whereas the mean is its center of gravity.” (pg 80). If the distribution is perfectly <strong>symmetrical</strong> the median = mean. The more <strong>skewed</strong> a distribution is, the further the median is from the mean.</p>
+<div id="displaying-cumulative-relative-frequencies" class="section level3">
+<h3><span class="header-section-number">3.4.1</span> Displaying cumulative relative frequencies</h3>
+<p>[Did not emphasize in 2017]</p>
+</div>
+</div>
+<div id="proportion" class="section level2">
+<h2><span class="header-section-number">3.5</span> 3.5 Proportion</h2>
+<p>[Did not emphasize in 2017]</p>
+</div>
+<div id="summary-2" class="section level2">
+<h2><span class="header-section-number">3.6</span> 3.6 Summary</h2>
+<p>Their summaries are always good. An especially important point is the 4th one.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="displaying-data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="chapter-4-estimating-with-uncertainty.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": ["BOOK_compansion_ABD.pdf", "BOOK_compansion_ABD.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

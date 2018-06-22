@@ -1,4 +1,4 @@
-## Handling Violations of Assumptions
+# Handling Violations of Assumptions
 
 | Reading Guide
 | Chapter 12: Handling Violations of Assumptions

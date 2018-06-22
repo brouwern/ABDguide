@@ -1,4 +1,4 @@
-## Comparing Two Means
+# Comparing Two Means
 
 | Reading Guide
 | Chapter 12: Comparing Two Means
