@@ -1,0 +1,14 @@
+--- 
+title: "A Companion to The Analysis of Biological Data"
+author: "Nathan Brouwer"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+biblio-style: apalike
+link-citations: yes
+description: "This is reading guide and course materials for Whitlock and Schluter's Analysis of Biological Data"
+---
+
+# Introduction {-}
+
+This is a reading guide to the excellent introductory biostatistics book *The Analysis of Biological Data, 2nd edition* by Whitlock and Schluter.  It consists of annotated outlines of each chapter where I have highlighted the portions of the text I focus on when I teach biostatistics.  A primary goal is to indicate to my students the text, equations, and vocabulary that are most closely related to what is covered in the lecture, and which examples are most most complimentary to what we cover in lecture and lab.
